@@ -1,0 +1,18 @@
+[
+    {
+        title: "ja",
+        price: 231,
+        thumbnail: "https://ndeah.com"
+        id: 324
+    }
+    {
+        title: "jaje",
+        price: 27313,
+        thumbnail: "https://ndeah.com"
+    }
+    {
+        title: "jajeji",
+        price: 2,
+        thumbnail: "https://ndeah.com"
+    }
+]
