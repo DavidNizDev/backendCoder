@@ -1,0 +1,32 @@
+[
+  { 
+    "title":"Ventana",
+    "price":"56",
+    "thumbnail":"http://urlDeLaFoto.com.ar",
+    "id":1
+  },
+  {
+    "title":"Monitor",
+    "price":"256",
+    "thumbnail":"http://urlDeLaFoto.com.ar",
+    "id":2
+  },
+  { 
+    "title":"Ladrillo",
+    "price":"2346",
+    "thumbnail":"http://urlDeLaFoto.com.ar",
+    "id":3
+  },
+  {
+    "title":"Botella",
+    "price":"636",
+    "thumbnail":"http://urlDeLaFoto.com.ar",
+    "id":4
+  },
+  {
+    "title":"Carpincho",
+    "price":"9886",
+    "thumbnail":"http://urlDeLaFoto.com.ar",
+    "id":5
+  }
+]

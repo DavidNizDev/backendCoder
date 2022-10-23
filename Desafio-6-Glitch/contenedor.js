@@ -1,10 +1,16 @@
 const fs = require('fs');
-
 class Contenedor {
     constructor(name) {
         this.name = name;
     }
-
+    openFile = async () => {
+        try {
+            let data = await fs.promises.readFile(`./${this.name}`, 'utf-8') || '[]'
+            return JSON.parse(data)
+        } catch (err) {
+            console.log(`Error al abrir el archivo: ${err}`)
+        }
+    }
     save = async (item) => {
         try {
             let items = await this.getAll();
@@ -35,15 +41,17 @@ class Contenedor {
     }
 
     getAll = async () => {
-        try {
-            let files = await fs.promises.readdir('/');
-            if (!files.includes(this.name))
-                await fs.promises.writeFile(this.name, JSON.stringify([]));
-            return JSON.parse(await fs.promises.readFile(this.name, 'utf-8'));
-        } catch (error) {
-            console.log('Error al obtener los registros');
-            console.log(error);
-        }
+        let dataActual = await this.openFile();
+        return dataActual;
+        /*         try {
+                    let files = await fs.promises.readdir('/');
+                    if (!files.includes(this.name))
+                        await fs.promises.writeFile(this.name, JSON.stringify([]));
+                    return JSON.parse(await fs.promises.readFile(this.name, 'utf-8'));
+                } catch (error) {
+                    console.log('Error al obtener los registros');
+                    console.log(error);
+                } */
     }
 
     deleteById = async (id) => {
@@ -81,8 +89,8 @@ let prod2 = {
     thumbnail: "http://urlDeLaFoto.com.ar"
 }
 
-contenedor.save(prod2);
-contenedor.save(prod1);
+//contenedor.save(prod2);
+//contenedor.save(prod1);
 
 
-//module.exports = Contenedor;
+module.exports = Contenedor;
