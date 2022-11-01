@@ -1,0 +1,22 @@
+﻿Escribir un programa ejecutable bajo node.js que realice las siguientes acciones:
+
+1) Lea el archivo package.json y declare un objeto con el siguiente formato y datos:
+
+let info = {
+    contenidoStr: (contenido del archivo leído en formato string),
+    contenidoObj: (contenido del archivo leído en formato objeto),
+    size: (tamaño en bytes del archivo)
+}
+
+2) Muestre por consola el objeto info luego de leer el archivo
+3) Guardar el objeto info en un archivo llamado info.txt dentro de la misma carpeta de package.json
+4) Incluir el manejo de errores (con throw new Error)
+
+
+Aclaración:
+- Utilizar la lectura y escritura de archivos en modo asincrónico con callbacks.
+- Punto2: Para deserializar un string con contenido JSON utilizar JSON.parse (convierte string en object).
+- Punto3: Para serializar un objeto (convertirlo a string) y guardarlo en un archivo utilizar JSON.stringify.
+
+Ayuda:
+Para el Punto 3 considerar usar JSON.stringify(info, null,'\t') para preservar el formato de representación del objeto en el archivo.

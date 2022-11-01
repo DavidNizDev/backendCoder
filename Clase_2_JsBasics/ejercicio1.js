@@ -37,7 +37,5 @@ function formatDocument(doc) {
   return resultDoc
 }
 
-
-
 let newDocument = formatDocument(documento);
 console.log(newDocument);

@@ -1,5 +1,4 @@
 
-
 Promise.reject(30)
 .then(x => x + 1)   // 11   // RESUELTA
 .then(x => x * 2)   // 22   // RESUELTA
