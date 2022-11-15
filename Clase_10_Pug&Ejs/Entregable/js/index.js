@@ -1,5 +1,5 @@
-const express = require('express')
-const exphbs = require('express-handlebars')
+const express = require('express');
+const exphbs = require('express-handlebars');
 const app = express();
 
 let productos = [
@@ -13,7 +13,7 @@ let productos = [
 const handlebarsConfig = {
     defaultLayout: 'index.handlebars'
 }
-app.engine('handlebars', exphbs(handlebarsConfig))
+app.engine('handlebars', exphbs(handlebarsConfig));
 app.use(express.urlencoded({ extended: true }));
 
 app.set('views', '../views');

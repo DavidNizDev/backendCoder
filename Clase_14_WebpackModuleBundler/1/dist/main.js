@@ -1,0 +1,1 @@
+setTimeout((() => { console.log("Hola, soy el primer mensaje") }), 1e3), setTimeout((() => { console.log("Hola, soy el segundo mensaje") }), 2e3), setTimeout((() => { console.log("Hola, soy el tercer mensaje") }), 3e3);

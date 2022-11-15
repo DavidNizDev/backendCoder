@@ -1,0 +1,17 @@
+{
+  "name": "clase_14_webpackmodulebundler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mensaje1.js",
+  "scripts": {
+    "build": "webpack ./mensaje1.js ./mensaje2.js ./mensaje3.js --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0"
+  }
+}

@@ -10,10 +10,14 @@ app.use(express.static('public'))
 
 io.on('connection', socket => {
     console.log('Nuevo cliente conectado!')
+
+    socket.on('mensaje', data => {
+        io.emit('mensajes', data)
+    })
 })
 
 const PORT = 8080
-const connectedServer = httpServer.listen(PORT, () => {
+const connectedServer = httpServer.listen(PORT, function () {
     console.log(`Servidor Http con Websockets escuchando en el puerto ${connectedServer.address().port}`)
 })
 connectedServer.on('error', error => console.log(`Error en servidor ${error}`))
