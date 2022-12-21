@@ -18,7 +18,7 @@ const EstudiantesDAO = mongoose.model('estudiantes', estudianteSchema)
 /* ------------------------------------------------------------------ */
 /*               Conexión a la base de datos : colegio                */
 /* ------------------------------------------------------------------ */
-mongoose.connect('mongodb://localhost/colegio', {
+mongoose.connect('mongodb://localhost/colegiox', {
   serverSelectionTimeoutMS: 5000,
 })
   .then(() => {
@@ -80,7 +80,7 @@ mongoose.connect('mongodb://localhost/colegio', {
         console.log('\n6) El estudiante que sacó mejor nota')
         //----------------------------------------------------------------------------
         // return EstudiantesDAO.find({ nota: 10 })
-        return EstudiantesDAO.find().sort({nota:-1}).limit(1)
+        return EstudiantesDAO.find().sort({ nota: -1 }).limit(1)
       })
       .then(estudiantes => {
         estudiantes.forEach(estudiante => {

@@ -33,7 +33,7 @@ const EstudiantesDAO = mongoose.model('estudiantes', estudianteSchema)
 /*               Conexión a la base de datos : colegio                */
 /* ------------------------------------------------------------------ */
 
-await mongoose.connect('mongodb://localhost/cole', {
+await mongoose.connect('mongodb://localhost/colegiox', {
     serverSelectionTimeoutMS: 5000,
 })
 console.log('Base de datos conectada')
