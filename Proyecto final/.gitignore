@@ -1,15 +1,6 @@
-# Ignore the node_modules directoy
 node_modules/
-
-# The file containing environment variables 
-
-
-# Ignore the following folders: containers, daos, db
+.env
 /src/containers/
 /src/db/
-
-# Ignore config.js file
 /src/config.js
-
-# Ignore the uploads folder
 /public/uploads
