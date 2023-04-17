@@ -175,3 +175,13 @@
 [15-04-2023 01:00:16] [31merror[39m: [31mPOST /auth/login 404[39m
 [15-04-2023 01:04:53] [31merror[39m: [31mPOST /auth/register 400[39m
 [15-04-2023 01:04:53] [33mwarn[39m: [33mPOST /auth/register 500[39m
+[15-04-2023 23:07:47] [31merror[39m: [31mGET /favicon.ico 404[39m
+[15-04-2023 23:08:21] [31merror[39m: [31mPOST /auth/login 404[39m
+[15-04-2023 23:08:54] [31merror[39m: [31mPOST /auth/register 400[39m
+[15-04-2023 23:08:54] [33mwarn[39m: [33mPOST /auth/register 500[39m
+[15-04-2023 23:42:24] [31merror[39m: [31mGET /register 404[39m
+[16-04-2023 00:03:15] [31merror[39m: [31mPOST /auth/register 400[39m
+[16-04-2023 00:03:16] [33mwarn[39m: [33mPOST /auth/register 500[39m
+[16-04-2023 00:05:18] [33mwarn[39m: [33mPOST /auth/register 500[39m
+[16-04-2023 00:07:23] [33mwarn[39m: [33mPOST /auth/register 500[39m
+[17-04-2023 10:18:57] [31merror[39m: [31mGET /favicon.ico 404[39m
