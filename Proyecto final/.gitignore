@@ -3,4 +3,4 @@ node_modules/
 /src/containers/
 /src/db/
 /src/config.js
-/public/uploads
+/public/uploads/
