@@ -83,8 +83,8 @@ class OrderController {
         );
         sendMailTo(
           newOrder.buyer_email,
-          "Compraste en Tiendita",
-          `Tu compra se ha realizado correctamente. Tu número de orden es ${newOrder._id}`
+          "Compraste en Tu Comercio",
+          `Tu compra en Tu Comercio se ha realizado correctamente. Tu número de orden es ${newOrder._id}. Gracias! - Desarrollado por David Niz -`
         );
         res.status(200);
         logger.http(`${req.method} ${req.originalUrl} ${res.statusCode}`);

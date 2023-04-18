@@ -51,11 +51,11 @@ class ArchiveDAO {
 
   async updateById(array, id, product) {
     try {
-      const index = array.findIndex((item) => item.id == id); // Busca el índice en el array de un producto según su 'id'
-      array = array.filter((item) => item.id != id); // Elimina el producto que se quiere editar
-      product.id = parseInt(id); // Le agrega el 'id'
-      product.timestamp = Date.now(); // Le agrega el 'timestamp'
-      array.splice(index, 0, product); // Añader el producto edita en el array
+      const index = array.findIndex((item) => item.id == id);
+      array = array.filter((item) => item.id != id); 
+      product.id = parseInt(id); 
+      product.timestamp = Date.now(); 
+      array.splice(index, 0, product);
       await fs.promises.writeFile(this.path, JSON.stringify(array, null, 2));
       return product;
     } catch (err) {

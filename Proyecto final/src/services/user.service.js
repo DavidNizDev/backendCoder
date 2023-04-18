@@ -47,7 +47,7 @@ class UserService {
       const user = await this.getUserByUsername(username);
 
       if (user) {
-        return user; // Already exist a user with that username
+        return user; 
       }
 
       if (!user) {
@@ -82,14 +82,6 @@ class UserService {
       throw new Error(err?.message);
     }
   }
-
-  /* async deleteMessageFromUserById(message_id, user_id) {
-    try {
-      return await UserDAO.deleteMessageFromUserById(message_id, user_id);
-    } catch (err) {
-      throw new Error(err?.message);
-    }
-  } */
 }
 
 export default new UserService();

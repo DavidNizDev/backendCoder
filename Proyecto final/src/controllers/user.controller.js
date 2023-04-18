@@ -2,7 +2,7 @@ import UserService from "../services/user.service.js";
 import { client, logger, sendMailTo } from "../utils/index.js";
 
 class UserController {
-  constructor() {}
+  constructor() { }
 
   async renderLoginView(req, res) {
     try {
@@ -45,7 +45,7 @@ class UserController {
         logger.error(`${req.method} ${req.originalUrl} ${res.statusCode}`);
         res.render("./pages/error.ejs", {
           code: 404,
-          message: "User Not Found",
+          message: "Usuario no encontrado",
         });
       }
       res.status(200);

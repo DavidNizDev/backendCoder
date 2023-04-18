@@ -5,19 +5,19 @@ import loginMiddleware from "../middleware/login.middleware.js";
 
 const authRouter = Router();
 
-// [GET] 🌐/auth/login
+// [GET] /auth/login
 authRouter.get("/login", UserController.renderLoginView);
 
-// [POST] 🌐/auth/login
+// [POST] /auth/login
 authRouter.post("/login", loginMiddleware);
 
-// [GET] 🌐/auth/logout
+// [GET] /auth/logout
 authRouter.get("/logout", UserController.logout);
 
-// [GET] 🌐/auth/register
+// [GET] /auth/register
 authRouter.get("/register", UserController.renderRegisterView);
 
-// [POST] 🌐/auht/register
+// [POST] /auht/register
 authRouter.post("/register", upload.single("image"), UserController.createUser);
 
 export default authRouter;

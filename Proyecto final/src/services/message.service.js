@@ -13,18 +13,6 @@ class MessageService {
     }
   }
 
-  /* async getAllMessagesFiltered(user_id) {
-    try {
-      const messages = await MessageDAO.getAll();
-      const filteredMessages = messages.filter(
-        (message) => message.userId != user_id
-      );
-      return filteredMessages;
-    } catch (err) {
-      throw new Error(err?.message);
-    }
-  } */
-
   async getMessagesByUserId(user_id) {
     try {
       const { messages } = await UserService.getUserById(user_id);
@@ -85,14 +73,6 @@ class MessageService {
     }
   }
 
-  /* async deleteMessageById(message_id, user_id) {
-    try {
-      await UserService.deleteMessageFromUserById(message_id, user_id);
-      return await MessageDAO.deleteById(message_id);
-    } catch (err) {
-      throw new Error(err?.message);
-    }
-  } */
 }
 
 export default new MessageService();

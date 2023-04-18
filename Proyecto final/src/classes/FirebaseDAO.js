@@ -47,11 +47,11 @@ class FirebaseDAO {
     try {
       const element = await this.getById(id);
       if (element === false) {
-        return false; // No se encontró el elemento
+        return false;
       } else {
         const data = await this.getAll();
         if (data === false) {
-          return null; // No se encontraron elementos
+          return null;
         } else {
           const doc = await this.collection.doc(id).delete();
           if (doc.empty) {
